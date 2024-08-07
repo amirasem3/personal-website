@@ -3,18 +3,18 @@
 }
 #description {
     color: black;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 #email {
     color: black;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 #email a {
     font-weight: normal;
 }
 #phone{
-    font-size: 20px;
+    font-size: 1.3rem;
     color: black;
     font-weight: bold;
 }
@@ -23,7 +23,7 @@
 }
 
 #location {
-    font-size: 20px;
+    font-size: 1.3rem;
     color: black;
     font-weight: bold;
 }

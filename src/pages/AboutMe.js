@@ -7,7 +7,8 @@ const AboutMe = () => {
         <div>
             <h1 id={"about_me_title"}>About Me</h1>
             <p id={"description"}>
-                I'm Amir Yousefi, a computer engineer with a keen interest in web programming, digital marketing, and supply chain management. I graduated from Sharif University of Technology with a B.S. in Computer Engineering.
+                I'm Amir Yousefi, a computer engineer with a keen interest in web programming, digital marketing, and supply chain management.<br/>
+                I graduated from Sharif University of Technology with a B.S. in Computer Engineering.
             </p>
             <p id={"email"}>
                     Email:<a href="mailto:Amiryousefi98@gmail.com">Amiryousefi98@gmail.com</a><br/>

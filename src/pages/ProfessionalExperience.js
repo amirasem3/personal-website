@@ -6,29 +6,38 @@ const ProfessionalExperience = () => {
         <div>
             <h1 id={"prof_exp_title"}>Professional Experience</h1>
             <ul>
+
                 <li>
-                    <strong>Active member of the Student Union Council</strong><br />
+                    <strong>Active member of the Student Union Council</strong><br/>
                     <desc>Sharif University of Technology, 2019 - 2020</desc>
                 </li>
                 <li>
-                    <strong>Designed and developed Tuffshell Android and IOS application</strong><br />
+                    <strong>Designed and developed Tuffshell Android and IOS application</strong><br/>
                     <desc>Developed tools to help labors find their exact workplace at construction sites.</desc>
                 </li>
                 <li>
-                    <strong>Co-founder and Lead Android and IOS developer at Hirafutech</strong><br />
+                    <strong>Co-founder and Lead Android and IOS developer at Hirafutech</strong><br/>
                     <desc>Designed and built smart implants for people with disabilities.</desc>
                 </li>
                 <li>
-                    <strong>Developed a prediction model for water percolation in coffee beans</strong><br />
+                    <strong>Developed a prediction model for water percolation in coffee beans</strong><br/>
                     <desc>Implemented in Java using Monte Carlo simulation.</desc>
                 </li>
                 <li>
-                    <strong>Created a Java simulation game inspired by Harvest Moon</strong><br />
+                    <strong>Created a Java simulation game inspired by Harvest Moon</strong><br/>
                     <desc>Simulates a farmer's daily activities including harvesting, trading, and more.</desc>
                 </li>
                 <li>
-                    <strong>Developed a text classification model for news articles in C</strong><br />
+                    <strong>Developed a text classification model for news articles in C</strong><br/>
                     <desc>Categorized natural language text according to content.</desc>
+                </li>
+                <li>
+                    <strong>IT Specialist</strong><br/>
+                    <desc>Vira Maham Afra Company 2021-2024</desc>
+                </li>
+                <li>
+                    <strong>Mobile App Developer</strong><br/>
+                    <desc>Espandar Total Solution Company 2024</desc>
                 </li>
             </ul>
         </div>

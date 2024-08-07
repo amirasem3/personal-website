@@ -1,18 +1,18 @@
 // src/pages/Skills.js
 import React from 'react';
 import '../components_css/Skills.css'
+import {useTranslation} from "react-i18next";
 
 const Skills = () => {
+    const { t } = useTranslation();
     return (
         <div>
-            <h1 id={"skill_title"}>Skills</h1>
-            <h2>Technical Skills</h2>
+            <h1 id={"skill_title"}>{t('skillsDetails.title')}</h1>
+            <h2>{t('skillsDetails.technical')}</h2>
             <p id={"technical_skills"}>
-                Experienced in FPGA design software (Quartus) and hardware description languages (VHDL, Verilog, System C).<br/>
-                Familiar with project management tools such as Jira and Trello, and Scrum (Agile) methodologies.<br/>
-                Experienced in mobile application development with Dart(Flutter).
+                {t('skillsDetails.technicalDesc')}
             </p>
-            <h2>Programming Languages</h2>
+            <h2>{t('skillsDetails.programmingLanguages')}</h2>
             <ul>
                 <li>Verilog</li>
                 <li>VHDL</li>
@@ -29,7 +29,7 @@ const Skills = () => {
                 <li>SQL</li>
                 <li>Latex</li>
             </ul>
-            <h2>Languages</h2>
+            <h2>{t('skillsDetails.languages')}</h2>
             <ul>
                 <li>Persian (Fluent)</li>
                 <li>English (Professional) (IELTS:7.5) (TOEFL:80)</li>

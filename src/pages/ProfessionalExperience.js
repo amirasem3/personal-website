@@ -1,43 +1,45 @@
 // src/pages/ProfessionalExperience.js
 import React from 'react';
 import '../components_css/ProfessionalExperience.css'
+import {useTranslation} from "react-i18next";
 const ProfessionalExperience = () => {
+    const { t } = useTranslation();
     return (
         <div>
-            <h1 id={"prof_exp_title"}>Professional Experience</h1>
+            <h1 id={"prof_exp_title"}>{t('professionalExperienceDetails.professionalTitle')}</h1>
             <ul>
 
                 <li>
-                    <strong>Active member of the Student Union Council</strong><br/>
-                    <desc>Sharif University of Technology, 2019 - 2020</desc>
+                    <strong>{t('professionalExperienceDetails.studentCouncil')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.studentCouncilDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Designed and developed Tuffshell Android and IOS application</strong><br/>
-                    <desc>Developed tools to help labors find their exact workplace at construction sites.</desc>
+                    <strong>{t('professionalExperienceDetails.tuffshell')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.tuffshellDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Co-founder and Lead Android and IOS developer at Hirafutech</strong><br/>
-                    <desc>Designed and built smart implants for people with disabilities.</desc>
+                    <strong>{t('professionalExperienceDetails.hirafutech')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.hirafutechDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Developed a prediction model for water percolation in coffee beans</strong><br/>
-                    <desc>Implemented in Java using Monte Carlo simulation.</desc>
+                    <strong>{t('professionalExperienceDetails.coffeePrediction')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.coffeePredictionDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Created a Java simulation game inspired by Harvest Moon</strong><br/>
-                    <desc>Simulates a farmer's daily activities including harvesting, trading, and more.</desc>
+                    <strong>{t('professionalExperienceDetails.harvestMoon')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.harvestMoonDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Developed a text classification model for news articles in C</strong><br/>
-                    <desc>Categorized natural language text according to content.</desc>
+                    <strong>{t('professionalExperienceDetails.textClassification')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.textClassificationDesc')}</desc>
                 </li>
                 <li>
-                    <strong>IT Specialist</strong><br/>
-                    <desc>Vira Maham Afra Company 2021-2024</desc>
+                    <strong>{t('professionalExperienceDetails.vira')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.viraDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Mobile App Developer</strong><br/>
-                    <desc>Espandar Total Solution Company 2024</desc>
+                    <strong>{t('professionalExperienceDetails.espandar')}</strong><br/>
+                    <desc>{t('professionalExperienceDetails.espandarDesc')}</desc>
                 </li>
             </ul>
         </div>

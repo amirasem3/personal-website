@@ -14,6 +14,7 @@ import Interests from './pages/Interests';
 import './App.css';
 import research from "./pages/Research";
 import Research from "./pages/Research";
+import './i18n';
 
 const App = () => {
     return (

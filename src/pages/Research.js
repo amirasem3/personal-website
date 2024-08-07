@@ -1,23 +1,23 @@
 // src/pages/Research.js
 import React from 'react';
 import '../components_css/Research.css'
+import {useTranslation} from "react-i18next";
 const Research = () => {
+    const { t } = useTranslation();
     return (
         <div>
-            <h1 id={"research_title"}>Research Interests</h1>
+            <h1 id={"research_title"}>{t('researchDetails.title')}</h1>
             <ul>
-                <li>Malware Analysis, Evasion, and Detection</li>
-                <li>Hardware-Assisted Security Solutions</li>
-                <li>Sandbox Development and Antivirus Operation</li>
-                <li>Reverse Engineering</li>
-                <li>Security and Privacy</li>
-                <li>Cybersecurity</li>
-                <li>Computer Architecture</li>
-                <li>Cloud Computing</li>
-                <li>Software Engineering</li>
-
+                <li>{t('researchDetails.r2')}</li>
+                <li>{t('researchDetails.r3')}</li>
+                <li>{t('researchDetails.r4')}</li>
+                <li>{t('researchDetails.r5')}</li>
+                <li>{t('researchDetails.r6')}</li>
+                <li>{t('researchDetails.r7')}</li>
+                <li>{t('researchDetails.r8')}</li>
+                <li>{t('researchDetails.r9')}</li>
+                <li>{t('researchDetails.r10')}</li>
             </ul>
-
         </div>
     );
 };

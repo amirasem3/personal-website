@@ -1,31 +1,31 @@
 // src/pages/Education.js
 import React from 'react';
 import '../components_css/Education.css'
+import {useTranslation} from "react-i18next";
 
 const Education = () => {
+    const { t } = useTranslation();
     return (
         <div id={"education_div"}>
-            <h1 id={"education_title"}>Education</h1>
+            <h1 id={"education_title"}>{t('education')}</h1>
 
             <p id={"bachelor"}>
-                <university_name>Sharif University of Technology(2016-2021)</university_name>
+                <university_name>{t('educationDetails.university')}</university_name>
                 <br/>
-                <strong id={"degree_title"}>B.S., Computer Engineering</strong><br/>
-                <grade>GPA: <gr_number>15.76/20</gr_number></grade>
+                <strong id={"degree_title"}>{t('educationDetails.degree')}</strong><br/>
+                <grade>{t('educationDetails.gpa')}: <gr_number>{t('educationDetails.actualGpa')}</gr_number></grade>
                 <br/>
                 <br/>
-                <thesis>Thesis: <th_desc>Design and Implementation of a web-based drug exchange platform</th_desc>
+                <thesis>{t('educationDetails.thesis')}: <th_desc>{t('educationDetails.thesisDesc')}</th_desc>
                 </thesis><br/>
-                <strong id={"concentration_field"}>Field of Concentration:</strong> <desc>Web programming, Finance, Digital Marketing, Supply Chain
-                Management </desc><br/>
-                <strong id={"relevant_course"}>Relevant Coursework:</strong> <desc>Web Programming, Database Design, System Analysis & Design, Design
-                of Algorithms, Software Engineering</desc>
+                <strong id={"concentration_field"}>{t('educationDetails.fieldOfStudy')}:</strong> <desc>{t('educationDetails.fieldOfStudyDesc')}</desc><br/>
+                <strong id={"relevant_course"}>{t('educationDetails.relevantCoursework')}:</strong> <desc>{t('educationDetails.relevantCourseWorkDesc')}</desc>
 
             </p>
             <br/>
             <p id={"master"}>
-                <university_name>Islamic Azad University (Central) Branch(2021-Now)</university_name><br/>
-                <strong id={"degree_title"}>M.Sc. Software Engineering</strong>
+                <university_name>{t('educationDetails.masterUniversity')}</university_name><br/>
+                <strong id={"degree_title"}>{t('educationDetails.masterDegree')}</strong>
             </p>
 
         </div>

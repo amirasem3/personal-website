@@ -1,57 +1,59 @@
 // src/pages/AwardsHonors.js
 import React from 'react';
 import '../components_css/AwardHonors.css'
+import {useTranslation} from "react-i18next";
 const AwardsHonors = () => {
+    const { t } = useTranslation();
     return (
         <div>
-            <h1 id={"award_title"}>Awards & Honors</h1>
+            <h1 id={"award_title"}>{t('awardsHonorsDetails.title')}</h1>
             <ul>
                 <li>
-                    <strong>Executive Staff</strong><br/>
-                    <desc id={"contest_title"}>International Collegiate Programming Contest (ICPC) 2017</desc>
+                    <strong>{t('awardsHonorsDetails.staff')}</strong><br/>
+                    <desc id={"contest_title"}>{t('awardsHonorsDetails.icpc2017')}</desc>
                     <br/>
-                    <desc>Asian Region, Tehran Site</desc>
+                    <desc>{t('awardsHonorsDetails.icpcDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Executive Staff</strong><br/>
-                    <desc id={"contest_title"}>International Collegiate Programming Contest (ICPC) 2018</desc>
+                    <strong>{t('awardsHonorsDetails.staff')}</strong><br/>
+                    <desc id={"contest_title"}>{t('awardsHonorsDetails.icpc2018')}</desc>
                     <br/>
-                    <desc>Asian Region, Tehran Site</desc>
+                    <desc>{t('awardsHonorsDetails.icpcDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Executive Staff</strong><br/>
-                    <desc id={"contest_title"}>International Collegiate Programming Contest (ICPC) 2019</desc>
+                    <strong>{t('awardsHonorsDetails.staff')}</strong><br/>
+                    <desc id={"contest_title"}>{t('awardsHonorsDetails.icpc2019')}</desc>
                     <br/>
-                    <desc>Asian Region, Tehran Site</desc>
+                    <desc>{t('awardsHonorsDetails.icpcDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Executive Staff</strong><br/>
-                    <desc id={"contest_title"}>Sharif AI Challenge 2018</desc><br/>
-                    <desc>Department of Computer Engineering, Sharif University of Technology</desc>
+                    <strong>{t('awardsHonorsDetails.staff')}</strong><br/>
+                    <desc id={"contest_title"}>{t('awardsHonorsDetails.aiChallenge18')}</desc><br/>
+                    <desc>{t('awardsHonorsDetails.sharifContestDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Executive Staff</strong><br/>
-                    <desc id={"contest_title"}>Sharif AI Challenge 2019</desc><br/>
-                    <desc>Department of Computer Engineering, Sharif University of Technology</desc>
+                    <strong>{t('awardsHonorsDetails.staff')}</strong><br/>
+                    <desc id={"contest_title"}>{t('awardsHonorsDetails.aiChallenge19')}</desc><br/>
+                    <desc>{t('awardsHonorsDetails.sharifContestDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Finance Team Member</strong><br/>
-                    <desc id={"contest_title"}>Sharif DataDays 2019</desc>
+                    <strong>{t('awardsHonorsDetails.dataDaysStaff')}</strong><br/>
+                    <desc id={"contest_title"}>{t('awardsHonorsDetails.dataDays')}</desc>
                     <br/>
-                    <desc>Department of Computer Engineering, Sharif University of Technology</desc>
+                    <desc>{t('awardsHonorsDetails.sharifContestDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Winner of the 1st Tehran Mental Health Electronics Startupweekend 2019</strong><br/>
-                    <desc>University of Tehran</desc>
+                    <strong>{t('awardsHonorsDetails.startupWeekend')}</strong><br/>
+                    <desc>{t('awardsHonorsDetails.startupUni')}</desc>
 
                 </li>
                 <li>
-                    <strong>Sponsorship Team Member </strong><br/>
-                    <strong>Winter Seminar Series (WSS) 2020</strong><br/>
-                    <desc>Department of Computer Engineering, Sharif University of Technology</desc>
+                    <strong>{t('awardsHonorsDetails.wssStaff')}</strong><br/>
+                    <strong>{t('awardsHonorsDetails.wss')}</strong><br/>
+                    <desc>{t('awardsHonorsDetails.sharifContestDesc')}</desc>
                 </li>
                 <li>
-                    <strong>Agile with Atlassian Jira, Coursera 2022</strong><br/>
+                    <strong>{t('awardsHonorsDetails.jira')}</strong><br/>
                     
                 </li>
             </ul>

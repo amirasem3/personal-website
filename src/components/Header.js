@@ -1,7 +1,7 @@
 // src/components/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import '../components_css/Header.css';
 
 const Header = () => {
     return (
@@ -18,7 +18,7 @@ const Header = () => {
                     <li><Link to="/awards-honors">Awards & Honors</Link></li>
                     <li><Link to="/teaching-experience">Teaching Experience</Link></li>
                     <li><Link to="/skills">Skills</Link></li>
-                    <li><Link to="/interests">Interests</Link></li>
+                    <li><Link to="/research-interests">Research Interests</Link></li>
                 </ul>
             </nav>
         </header>

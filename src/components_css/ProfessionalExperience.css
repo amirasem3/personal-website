@@ -1,0 +1,15 @@
+#prof_exp_title {
+    color: black;
+}
+li strong {
+    color:black;
+    font-size: 20px;
+}
+li desc {
+    color: black;
+    font-size: 19px;
+}
+
+#contest_title{
+    font-weight: bold;
+}

@@ -12,6 +12,8 @@ import TeachingExperience from './pages/TeachingExperiences';
 import Skills from './pages/Skills';
 import Interests from './pages/Interests';
 import './App.css';
+import research from "./pages/Research";
+import Research from "./pages/Research";
 
 const App = () => {
     return (
@@ -27,6 +29,7 @@ const App = () => {
                     <Route path="/teaching-experience" element={<TeachingExperience />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/interests" element={<Interests />} />
+                    <Route path="/research-interests" element={<Research/>}/>
                 </Routes>
             </main>
             <Footer />

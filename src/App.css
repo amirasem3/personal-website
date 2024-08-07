@@ -1,0 +1,39 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 60px; /* space for the footer */
+}
+
+h1 {
+  color: #333;
+}
+
+p,
+ul {
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li ul li {
+  margin-bottom: 5px;
+}

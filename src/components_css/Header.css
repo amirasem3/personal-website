@@ -1,25 +1,28 @@
-/* src/components/Header.css */
+/* src/components_css/Header.css */
+
 header {
-    background-color: gold;
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    direction: inherit;
 }
 
 .navbar {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Enable wrapping */
     width: 100%;
 }
 
 .navbar-brand a {
-    color: #000000;
-    font-weight: bold;
+    color: #fff;
     font-size: 1.5rem;
     text-decoration: none;
-    margin-right: 20px;
+    margin: 10px 20px;
 }
 
 .navbar-menu {
@@ -28,6 +31,9 @@ header {
     padding: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items for smaller screens */
+    flex-grow: 1;
 }
 
 .navbar-menu li {
@@ -35,31 +41,60 @@ header {
 }
 
 .navbar-menu li a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: bold;
 }
 
 .navbar-menu li a:hover {
     text-decoration: underline;
 }
 
+.language-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    direction: inherit;
+}
+
+.language-toggle button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.language-toggle button:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .navbar-menu {
-        display: none;
+        flex-direction: column; /* Stack items vertically on small screens */
     }
 
-    .navbar {
-        justify-content: space-between;
+    .navbar-brand a {
+        margin: 0;
     }
 
-    .navbar-toggler {
-        display: block;
-        background: none;
-        border: none;
-        color: #000000;
-        font-size: 1.5rem;
-        cursor: pointer;
+    .language-toggle {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu li {
+        margin: 5px 0;
+    }
+
+    .navbar-brand a {
+        font-size: 1.2rem;
+    }
+
+    .language-toggle button {
+        font-size: 0.9rem;
     }
 }

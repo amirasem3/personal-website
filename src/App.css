@@ -1,23 +1,32 @@
 /* src/App.css */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  direction: inherit;
 }
 
 main {
   padding: 20px;
-  margin-bottom: 60px; /* space for the footer */
+  margin-bottom: 60px; /* Space for the footer */
+  max-width: 1200px; /* Limit the max width for large screens */
+  margin: 0 auto; /* Center the content */
+  direction: inherit;
 }
 
 h1 {
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  direction: inherit;
 }
 
-p,
-ul {
+p, ul {
   color: #555;
+  direction: inherit;
+  line-height: 1.6;
 }
 
 ul {
@@ -36,4 +45,52 @@ ul li ul {
 
 ul li ul li {
   margin-bottom: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  direction: inherit;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p, ul {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
